@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1a1a1a;
 }
 
 @theme inline {
@@ -14,9 +14,21 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1a1a1a;
     --foreground: #ededed;
   }
+}
+.font-avantgarde {
+  font-family: var(--font-avantgarde);
+}
+.font-gambarino {
+  font-family: var(--font-gambarino);
+}
+.font-Butcherman {
+  font-family: var(--font-Butcherman);
+}
+.font-barlow {
+  font-family: var(--font-barlow);
 }
 
 body {

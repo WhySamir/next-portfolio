@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Barlow_Semi_Condensed, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { avantGarde, Butcherman, gambarino } from "./fonts/avantgarde";
+import NavBar from "./components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +12,11 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+const barlow = Barlow_Semi_Condensed({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-barlow",
 });
 
 export const metadata: Metadata = {
@@ -23,10 +30,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={` `}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${barlow.variable} ${geistMono.variable} ${avantGarde.variable} ${gambarino.variable} ${Butcherman.variable} antialiased`}
       >
+        <NavBar />
+        {/* <h1 className="font-gambarino text-3xl">Custom AvantGarde Heading</h1> */}
+
         {children}
       </body>
     </html>
