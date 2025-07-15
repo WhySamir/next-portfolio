@@ -2,7 +2,7 @@
 import LandingPage from "./components/LandingPage";
 // import Skills from "./priv_components/Skills";
 
-import { Skills } from "next-priv-components";
+import { Skills } from "priv_components";
 import Image from "next/image";
 
 export default function Home() {
