@@ -11,6 +11,7 @@
   "dependencies": {
     "framer-motion": "^12.23.5",
     "next": "15.3.5",
+    "priv-components": "git+https://github.com/whysamir/priv_components.git",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
