@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^12.23.5",
-    "priv_components": "git+ssh://git@github-college/whysamir/priv_components.git",
+    "priv_components": "git+ssh://git@github.com/whysamir/priv_components.git",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
