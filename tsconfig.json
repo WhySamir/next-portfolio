@@ -20,7 +20,8 @@
     ],
       "baseUrl": "src",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+            "next-priv-components": ["node_modules/next-priv-components/dist/index"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
