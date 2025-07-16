@@ -41,7 +41,7 @@ export default function LandingPage() {
                   fill
                   //transition-transform duration-500 hover:scale-125 hover:-rotate-12
                   className="absolute object-cover h-full w-full inset-0 rounded-full border border-white/80"
-                  alt=""
+                  alt="profile"
                 />
               </div>
               <div className="flex flex-col ">
