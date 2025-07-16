@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "preinstall": "sh scripts/setup-ssh.sh",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -11,7 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^12.23.5",
-    "priv_components": "https://${GITHUB_TOKEN}@github.com/whysamir/priv_components.git",
+    "priv_components": "git+https://github.com/whysamir/priv_components.git",
     "next": "15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
