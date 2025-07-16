@@ -34,13 +34,14 @@ export default function LandingPage() {
             <div className="flex items-center justify-center text-center gap-4">
               <div className="relative inline-block w-16 h-16 md:w-20 md:h-20">
                 <Image
+                  width={1000}
+                  height={1000}
                   style={{
                     color: "transparent",
                   }}
                   src="/3.jpg"
-                  fill
-                  //transition-transform duration-500 hover:scale-125 hover:-rotate-12
-                  className="absolute object-cover h-full w-full inset-0 rounded-full border border-white/80"
+                  //transition-transform absolute inset-0 duration-500 hover:scale-125 hover:-rotate-12
+                  className=" object-cover h-full w-full  rounded-full border border-white/80"
                   alt="profile"
                 />
               </div>
