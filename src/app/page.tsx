@@ -1,6 +1,6 @@
 "use client";
 import LandingPage from "./components/LandingPage";
-import Skills from "./priv_components/Skills";
+import Skills from "./components/knowledges/Skills";
 
 export default function Home() {
   return (
