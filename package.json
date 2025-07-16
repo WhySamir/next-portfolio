@@ -6,7 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "secure-install": "dotenv npm install",
+    "secure-install": "npx dotenv -e .env -- bash -c \"npm install\"",
     "lint": "next lint"
   },
   "dependencies": {
