@@ -6,12 +6,13 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "secure-install": "dotenv npm install",
     "lint": "next lint"
   },
   "dependencies": {
     "framer-motion": "^12.23.5",
-    "priv_components": "git+https://github.com/whysamir/priv_components.git",
     "next": "15.3.5",
+    "priv_components": "git+https://github.com/whysamir/priv_components.git",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -21,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv-cli": "^8.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
     "tailwindcss": "^4",
