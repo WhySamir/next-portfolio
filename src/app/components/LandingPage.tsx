@@ -39,7 +39,7 @@ export default function LandingPage() {
                   style={{
                     color: "transparent",
                   }}
-                  src="/3.jpg"
+                  src="/logos/3.jpg"
                   //transition-transform absolute inset-0 duration-500 hover:scale-125 hover:-rotate-12
                   className=" object-cover h-full w-full  rounded-full border border-white/80"
                   alt="profile"
