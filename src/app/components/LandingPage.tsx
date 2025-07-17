@@ -27,15 +27,17 @@ const infos = [
 export default function LandingPage() {
   return (
     <>
-      <section className="relative overflow-hidden h-[100svh] flex flex-col pt-12  items-center md:justify-center justify-center text-white ">
+      <section
+        id="home"
+        className="relative overflow-hidden h-[100svh] flex flex-col pt-12  items-center md:justify-center justify-center text-white "
+      >
         <div className="relative z-10  text-center md:mt-10 lg:max-w-7xl ">
           <main className=" flex flex-col gap-4 md:gap-6">
             {/* name and photo */}
             <div className="flex items-center justify-center text-center gap-4">
               <div className="relative inline-block w-16 h-16 md:w-20 md:h-20">
                 <Image
-                  width={1000}
-                  height={1000}
+                  fill
                   style={{
                     color: "transparent",
                   }}
@@ -82,8 +84,8 @@ export default function LandingPage() {
                   <button
                     className="inline-flex relative rounded-full items-center   justify-center 
                 whitespace-nowrap  text-sm font-medium  
-                   disabled:pointer-events-none disabled:opacity-50 border
-                   h-12  overflow-hidden
+                   disabled:pointer-events-none disabled:opacity-50  border-2 border-white
+                   h-auto  overflow-hidden
                       p-3 bg-transparent text-gray-50
                       transition-transform duration-500 
                       hover:scale-105 hover:-rotate-12"

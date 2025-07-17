@@ -12,7 +12,8 @@
     "framer-motion": "^12.23.5",
     "next": "15.3.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

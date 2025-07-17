@@ -3,6 +3,8 @@ import { Barlow_Semi_Condensed, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { avantGarde, Butcherman, gambarino } from "./fonts/avantgarde";
 import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
+import SmoothScrollProvider from "./components/SmoothScrollProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,10 +36,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${barlow.variable} ${geistMono.variable} ${avantGarde.variable} ${gambarino.variable} ${Butcherman.variable} antialiased`}
       >
+        <SmoothScrollProvider />
         <NavBar />
         {/* <h1 className="font-gambarino text-3xl">Custom AvantGarde Heading</h1> */}
 
         {children}
+        <Footer />
       </body>
     </html>
   );
