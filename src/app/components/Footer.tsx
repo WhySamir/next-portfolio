@@ -11,7 +11,6 @@ const Footer = () => {
                 Samir Shakya
               </h1>
               <p className="text-stone-200/70">
-                {" "}
                 &copy; {new Date().getFullYear()} | All rights reserved.
               </p>
             </div>
@@ -40,7 +39,7 @@ const Footer = () => {
                   {" "}
                   <h1 className="text-stone-200">Projects</h1>
                   <Link href={"/"} className="cursor-pointer hover:text-white">
-                    Sam's Store
+                    Sam&apos;s Store
                   </Link>
                   <Link className="cursor-pointer hover:text-white" href={"/"}>
                     Icodenotzbook
@@ -49,7 +48,7 @@ const Footer = () => {
                     YoutubeClone
                   </Link>
                   <Link className="cursor-pointer hover:text-white" href={"/"}>
-                    Cloth's Store
+                    Cloth&apos;s Store
                   </Link>
                 </div>
                 <div className="mt-4 cursor-pointer font-bold flex flex-col gap-3">

@@ -37,7 +37,7 @@ const Projects = () => {
             <div className=" flex flex-col gap-3 md:gap-6">
               <div className="flex items-center lg:flex-col lg:items-start lg:gap-2 xl:gap-6 gap-4 md:gap-6">
                 <h3 className=" text-xl md:text-3xl font-semibold">
-                  Sam's Store
+                  Sam&apos;s Store
                 </h3>
                 <div className=" flex gap-3 md:gap-5">
                   <button
@@ -168,7 +168,7 @@ const Projects = () => {
             <div className=" flex flex-col gap-3 md:gap-6">
               <div className="flex items-center lg:flex-col lg:items-start lg:gap-2 xl:gap-6 gap-4 md:gap-6">
                 <h3 className=" text-xl md:text-3xl font-semibold">
-                  Sam's Store
+                  Sam&apos;s Store
                 </h3>
                 <div className=" flex gap-3 md:gap-5">
                   <button
