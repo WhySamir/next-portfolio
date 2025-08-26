@@ -18,7 +18,7 @@ const Projects = () => {
         </motion.h1>
       </div>
       {/* Projects Grid */}
-      <div className="grid gap-20 md:gap-28">
+      <div className="grid gap-12 md:gap-20 lg:gap-28">
         {/* Project 1 */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-10">
           {/* Image */}
@@ -66,7 +66,22 @@ const Projects = () => {
 
         {/* Project 2 */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-10">
-          {/* Content first */}
+          {/* for sm */}
+          <Link
+            href={"/"}
+            className="w-full  lg:hidden lg:w-1/2 hover:-translate-y-2 transition-transform duration-300 "
+          >
+            <div className="relative w-full aspect-[16/10]  overflow-hidden  max-w-[650px]">
+              <Image
+                fill
+                src="/codenote.png"
+                alt="Icodenotzbook"
+                className="object-contain "
+              />
+            </div>
+          </Link>
+
+          {/* Content first in lg */}
           <div className="lg:w-1/2 flex flex-col gap-6">
             <div className="flex flex-col gap-3">
               <h3 className="text-xl md:text-3xl font-semibold">
@@ -101,7 +116,7 @@ const Projects = () => {
           {/* Image second */}
           <Link
             href={"/"}
-            className="w-full lg:w-1/2 hover:-translate-y-2 transition-transform duration-300 "
+            className="w-full hidden lg:block lg:w-1/2 hover:-translate-y-2 transition-transform duration-300 "
           >
             <div className="relative w-full aspect-[16/10]  overflow-hidden  max-w-[650px]">
               <Image
