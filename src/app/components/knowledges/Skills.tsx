@@ -13,7 +13,7 @@ const Skills = () => {
         <motion.h1
           initial={{ opacity: 0, x: -75 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.25 }}
           className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold font-barlow text-stone-200"
         >
@@ -22,7 +22,7 @@ const Skills = () => {
         <motion.p
           initial={{ opacity: 0, x: -90 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.5, delay: 0.25 }}
           className="text-sm  min-[430px]:text-base max-w-lg md:max-w-3xl text-stone-200/70"
         >

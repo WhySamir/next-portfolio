@@ -57,6 +57,9 @@ body {
     animation: gradientShift 40s ease-in-out infinite;
   }
 }
-html {
-  scroll-behavior: smooth;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
 }
