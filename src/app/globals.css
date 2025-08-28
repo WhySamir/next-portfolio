@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #1a1a1a;
   --foreground: #1a1a1a;
 }
 
@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1a1a1a;
-    --foreground: #ededed;
+    --foreground: #1a1a1a;
   }
 }
 .font-avantgarde {
