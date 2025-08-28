@@ -30,7 +30,7 @@ export default function GithubAnimatedIcon(
           <animate
             fill="freeze"
             attributeName="stroke-dashoffset"
-            dur="0.7s"
+            dur="2s"
             values="32;0"
           />
         </path>
@@ -49,7 +49,7 @@ export default function GithubAnimatedIcon(
             fill="freeze"
             attributeName="stroke-dashoffset"
             begin="0.8s"
-            dur="0.2s"
+            dur="2s"
             values="10;0"
           />
         </path>

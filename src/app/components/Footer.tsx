@@ -38,29 +38,63 @@ const Footer = () => {
                 <div className="mt-4 font-bold flex cursor-pointer flex-col gap-3">
                   {" "}
                   <h1 className="text-stone-200">Projects</h1>
-                  <Link href={"/"} className="cursor-pointer hover:text-white">
-                    Sam&apos;s Store
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={"https://clothing-store-pearl-psi.vercel.app"}
+                    className="cursor-pointer hover:text-white"
+                  >
+                    ClodeX
                   </Link>
-                  <Link className="cursor-pointer hover:text-white" href={"/"}>
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer hover:text-white"
+                    href={"https://codenotebookz.netlify.app"}
+                  >
                     Icodenotzbook
                   </Link>
-                  <Link className="cursor-pointer hover:text-white" href={"/"}>
+                  <Link
+                    href={"https://wawatchfree.netlify.app/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     YoutubeClone
                   </Link>
-                  <Link className="cursor-pointer hover:text-white" href={"/"}>
-                    Cloth&apos;s Store
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer hover:text-white"
+                    href={"https://my-shoe-store-chi.vercel.app/"}
+                  >
+                    Sam&apos;s Store
                   </Link>
                 </div>
                 <div className="mt-4 cursor-pointer font-bold flex flex-col gap-3">
                   {" "}
                   <h1 className="text-stone-200">Contact</h1>
-                  <Link href={"/"} className="cursor-pointer hover:text-white">
+                  <Link
+                    href={"https://github.com/whysamir"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer hover:text-white"
+                  >
                     Github
                   </Link>
-                  <Link href={"/"} className="cursor-pointer hover:text-white">
+                  <Link
+                    href={"https://www.linkedin.com/in/samir-shakya"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer hover:text-white"
+                  >
                     Linkedin
                   </Link>
-                  <Link href={"/"} className="cursor-pointer hover:text-white">
+                  <Link
+                    href={"https://www.instagram.com/samirr.shakya"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cursor-pointer hover:text-white"
+                  >
                     Instagram
                   </Link>
                 </div>
