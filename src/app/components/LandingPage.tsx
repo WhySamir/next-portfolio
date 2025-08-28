@@ -5,23 +5,24 @@ import Image from "next/image";
 const infos = [
   {
     icon: GithubAnimatedIcon,
-    route: "/github",
+    route: "https://github.com/whysamir",
     type: "component",
   },
   {
     icon: "/linkedin.svg",
-    route: "/linkedin",
+    route: "https://www.linkedin.com/in/samir-shakya",
     type: "img",
   },
   {
     icon: "/instagram.svg",
-    route: "/instagram",
+    route: "https://www.instagram.com/samirr.shakya/",
     type: "img",
   },
   {
     icon: "/resume.svg",
-    route: "/resume",
+    route: "/samirshakyaa_CV.pdf",
     type: "img",
+    download: true,
   },
 ];
 
@@ -74,31 +75,54 @@ export default function LandingPage() {
             </div>
             {/* infos */}
             <div className=" flex  justify-center items-center mb-6 gap-4">
-              {infos.map((item, index: number) => (
-                <Link key={index} href={item.route}>
-                  <button
-                    className="inline-flex relative rounded-full items-center   justify-center 
-                whitespace-nowrap  text-sm font-medium  
-                   disabled:pointer-events-none disabled:opacity-50  border-2 border-white
-                   h-auto  overflow-hidden
-                      p-3 bg-transparent text-gray-50
-                      transition-transform duration-500 
-                      hover:scale-105 hover:-rotate-12"
+              {infos.map((item, index: number) => {
+                const IconComponent =
+                  typeof item.icon === "string" ? (
+                    <Image
+                      src={item.icon}
+                      alt={item.route}
+                      height={24}
+                      width={24}
+                      className="w-6 h-6"
+                    />
+                  ) : (
+                    <item.icon className="w-6 h-6 text-white" />
+                  );
+
+                return item.download ? (
+                  <a
+                    key={index}
+                    href={item.route}
+                    download
+                    className="inline-flex relative rounded-full items-center justify-center 
+        whitespace-nowrap text-sm font-medium  
+        disabled:pointer-events-none disabled:opacity-50 border-2 border-white
+        h-auto overflow-hidden p-3 bg-transparent text-gray-50
+        transition-transform duration-500 
+        hover:scale-105 hover:-rotate-12"
                   >
-                    {typeof item.icon === "string" ? (
-                      <Image
-                        src={item.icon}
-                        alt={item.route}
-                        height={24}
-                        width={24}
-                        className="w-6 h-6"
-                      />
-                    ) : (
-                      <item.icon className="w-6 h-6 text-white" />
-                    )}
-                  </button>
-                </Link>
-              ))}
+                    {IconComponent}
+                  </a>
+                ) : (
+                  <Link
+                    key={index}
+                    href={item.route}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      className="inline-flex relative rounded-full items-center justify-center 
+          whitespace-nowrap text-sm font-medium  
+          disabled:pointer-events-none disabled:opacity-50 border-2 border-white
+          h-auto overflow-hidden p-3 bg-transparent text-gray-50
+          transition-transform duration-500 
+          hover:scale-105 hover:-rotate-12"
+                    >
+                      {IconComponent}
+                    </button>
+                  </Link>
+                );
+              })}
             </div>
           </main>
         </div>

@@ -10,7 +10,7 @@ const Projects = () => {
         <motion.h1
           initial={{ opacity: 0, x: -75 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.2 }}
           className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold font-barlow text-stone-200"
         >

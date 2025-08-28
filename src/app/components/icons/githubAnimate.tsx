@@ -64,7 +64,7 @@ export default function GithubAnimatedIcon(
       >
         <animate
           attributeName="y"
-          dur="8s"
+          dur="6s"
           keyTimes="0;0.45;0.46;0.63;0.64;1"
           repeatCount="indefinite"
           values="11;11;7;7;11;11"

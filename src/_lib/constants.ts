@@ -53,6 +53,22 @@ export const techCardsItems:TechCardItemType[] = [
     imageUrl: "/logos/mongo.svg",
     bgColor: "bg-[#599636]/30",
   },
+  {
+    name: "Supabase",
+    description: "Backend tool",
+    imageUrl: "/logos/supabase.svg",
+    bgColor: "bg-[#3ECF8E]/20",
+  },{
+    name: "PostgreSQL",
+    description: "OR database system",
+    imageUrl: "/logos/postgresql.svg",
+    bgColor: "bg-[#336791]/20",
+  },{
+    name: "Prisma",
+    description: "ORM",
+    imageUrl: "/logos/prisma.svg",
+    bgColor: "bg-[#0C344B]/20",
+  },
   
   {
     name: "NodeJS",
