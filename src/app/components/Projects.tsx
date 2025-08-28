@@ -95,8 +95,8 @@ const Projects = () => {
                   className="font-bold w-10 h-10 bg-stone-200/80 text-white rounded-lg flex items-center justify-center"
                 >
                   <Image
-                    src="/vector.svg"
-                    alt="vector "
+                    src="/Vector.svg"
+                    alt="Vector "
                     width={18}
                     height={18}
                   />
@@ -176,8 +176,8 @@ const Projects = () => {
                   className="font-bold w-10 h-10 bg-stone-200/80 text-white rounded-lg flex items-center justify-center"
                 >
                   <Image
-                    src="/vector.svg"
-                    alt="vector "
+                    src="/Vector.svg"
+                    alt="Vector "
                     width={18}
                     height={18}
                   />
@@ -278,8 +278,8 @@ const Projects = () => {
                   className="font-bold w-10 h-10 bg-stone-200/80 text-white rounded-lg flex items-center justify-center"
                 >
                   <Image
-                    src="/vector.svg"
-                    alt="vector "
+                    src="/Vector.svg"
+                    alt="Vector "
                     width={18}
                     height={18}
                   />
