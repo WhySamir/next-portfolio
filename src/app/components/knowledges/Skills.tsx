@@ -42,7 +42,7 @@ const Skills = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-between  gap-4"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center text-[#ededed] justify-between  gap-4"
       >
         {techCardsItems.map((cardItem: TechCardItemType) => (
           <TechCard key={cardItem.name} cardInfo={cardItem} />

@@ -17,9 +17,7 @@ const TechCard = ({ cardInfo }: { cardInfo: TechCardItemType }) => {
       </div>
       <div>
         <h4 className="text-lg font-medium">{name}</h4>
-        <p className="text-dark-200/70 dark:text-white/70 text-sm">
-          {description}
-        </p>
+        <p className=" text-white/70 text-sm">{description}</p>
       </div>
     </div>
   );
