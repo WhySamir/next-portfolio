@@ -112,10 +112,10 @@ const Projects = () => {
               </div>
             </div>
             <p className="text-base md:text-lg text-stone-300">
-              Developed a full-stack e-commerce store with product filtering,
-              secure checkout, and responsive design. Integrated inventory
-              managemen and order tracking to deliver a seamless shopping
-              experience.
+              Currently building a full-stack e-commerce store with product
+              filtering, secure checkout, and responsive design. Implementing
+              inventory management and order tracking to deliver a seamless
+              shopping experience.
             </p>
             <div className="flex flex-wrap gap-3">
               {["Next JS", "Tailwind", "PostgreSQL", "Supabase"].map((tech) => (
