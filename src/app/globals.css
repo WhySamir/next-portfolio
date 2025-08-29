@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ededed;
-    --foreground: #ededed;
+    --background: #1a1a1a;
+    --foreground: #1a1a1a;
   }
 }
 .font-avantgarde {
