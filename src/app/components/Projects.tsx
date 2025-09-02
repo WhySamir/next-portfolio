@@ -150,7 +150,7 @@ const Projects = () => {
               <Image
                 fill
                 src="/codenote.png"
-                alt="Icodenotzbook"
+                alt="Codenotzbookz"
                 className="object-contain "
               />
             </motion.div>
@@ -166,7 +166,7 @@ const Projects = () => {
           >
             <div className="flex flex-col gap-3">
               <h3 className="text-xl md:text-3xl font-semibold">
-                Icodenotzbook
+                Codenotebookz
               </h3>
               <div className="flex gap-4">
                 <Link
@@ -227,7 +227,7 @@ const Projects = () => {
               <Image
                 fill
                 src="/codenote.png"
-                alt="Icodenotzbook"
+                alt="Codenotebookz"
                 className="object-contain "
               />
             </motion.div>

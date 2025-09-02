@@ -69,7 +69,10 @@ export default function LandingPage() {
               </div>
             </div>
             {/* fullstack */}
-            <div className="font-barlow flex flex-col md:gap-6 text-5xl sm:text-7xl tracking-tight font-black    lg:text-8xl sm:leading-20 ">
+            <div
+              // style={{ fontFamily: "var(--font-playfair)" }}
+              className=" font-barlow flex flex-col md:gap-6 text-5xl sm:text-7xl tracking-tight font-black    lg:text-8xl sm:leading-20 "
+            >
               <h1 className=" text-gray-50">FULLSTACK</h1>
               <h1 className=" text-[#3B82F6]  ">DEVELOPER</h1>
             </div>

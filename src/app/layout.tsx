@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Barlow_Semi_Condensed, Geist, Geist_Mono } from "next/font/google";
+import {
+  Barlow_Semi_Condensed,
+  Geist,
+  Geist_Mono,
+  Playfair_Display,
+} from "next/font/google";
 import "./globals.css";
 import { avantGarde, Butcherman, gambarino } from "./fonts/avantgarde";
 import NavBar from "./components/Navbar";
@@ -21,7 +26,11 @@ const barlow = Barlow_Semi_Condensed({
   weight: ["400", "600", "700"],
   variable: "--font-barlow",
 });
-
+const playfair = Playfair_Display({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
 export const metadata: Metadata = {
   title: {
     template: "Samir Shakya",
@@ -37,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={` `}>
+    <html lang="en" className={`${playfair.variable} antialiased `}>
       <head>
         <Script
           strategy="lazyOnload"
