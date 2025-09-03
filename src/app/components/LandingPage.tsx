@@ -2,7 +2,6 @@
 import Link from "next/link";
 import GithubAnimatedIcon from "./icons/githubAnimate";
 import Image from "next/image";
-import { url } from "inspector";
 const infos = [
   {
     icon: GithubAnimatedIcon,
