@@ -7,7 +7,10 @@ const Footer = () => {
         <div className=" py-14  px-4 lg:px-8 z-10  w-full  h-full border rounded-2xl border-[#3d3d3d]">
           <div className="flex flex-col  lg:grid  lg:grid-cols-5 lg:items-center lg:justify-between  gap-4  space-y-4 sm:space-y-0  ">
             <div className="lg:px-3 col-span-3 flex flex-col items-start">
-              <h1 className="font-barlow tracking-tighter pb-6 sm:max-w-[300px] w-full text-5xl sm:text-8xl animate-gradient-text">
+              <h1
+                style={{ fontFamily: "var(--font-playfair)" }}
+                className=" tracking-tighter pb-6 sm:max-w-[300px] w-full text-5xl sm:text-8xl animate-gradient-text"
+              >
                 Samir Shakya
               </h1>
               <p className="text-stone-200/70">

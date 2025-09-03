@@ -8,17 +8,23 @@ import TechCard from "./TechCard";
 import { motion } from "framer-motion";
 
 const Skills = () => {
-  const { ref } = useInView({
-    threshold: 0.3,
-    triggerOnce: false,
+  const { ref: ref, inView } = useInView({
+    threshold: 0.8,
+    triggerOnce: true,
+  });
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.4,
+    triggerOnce: true,
   });
 
   return (
-    <section ref={ref} className=" relative z-10 py-16 sm:py-24" id="about">
+    <section className=" relative z-10 py-16 sm:py-24" id="about">
       <div className="space-y-4 mb-10">
         <motion.h1
+          ref={ref}
           initial={{ opacity: 0, x: -75 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -75 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
           className="text-3xl min-[430px]:text-4xl md:text-5xl font-bold font-barlow text-stone-200"
@@ -26,8 +32,10 @@ const Skills = () => {
           Technologies I Rely On
         </motion.h1>
         <motion.p
-          initial={{ opacity: 0, x: -90 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          ref={ref2}
+          initial={{ opacity: 0, x: -80 }}
+          animate={inView2 ? { opacity: 1, x: 0 } : { opacity: 0, x: -80 }}
+          // whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.25 }}
           className="text-sm  min-[430px]:text-base max-w-lg md:max-w-3xl text-stone-200/70"

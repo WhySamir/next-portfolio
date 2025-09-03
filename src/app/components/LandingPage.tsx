@@ -2,6 +2,7 @@
 import Link from "next/link";
 import GithubAnimatedIcon from "./icons/githubAnimate";
 import Image from "next/image";
+import { url } from "inspector";
 const infos = [
   {
     icon: GithubAnimatedIcon,
@@ -33,19 +34,28 @@ export default function LandingPage() {
         id="home"
         className="relative overflow-hidden h-[100svh] flex flex-col pt-12  items-center md:justify-center justify-center text-white "
       >
-        <div className="relative z-10  text-center md:mt-10 lg:max-w-7xl ">
-          <main className=" flex flex-col  gap-8 ">
+        <div className="relative   z-10  text-center md:mt-10 lg:max-w-7xl ">
+          <main className="relative flex flex-col  gap-8 ">
+            <div
+              style={{
+                // background:
+                //   "linear-gradient(180deg, #2F3446 40%, #2F344640 54%, #2F3446 59%, #2F3446 100%)",
+                backgroundImage: 'url("/logos/e1.png")',
+              }}
+              className="absolute z-0 -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px]  rounded-full blur-3xl"
+            />
             {/* name and photo */}
-            <div className="flex flex-col sm:flex-row items-center justify-center text-center gap-6">
-              <div className="relative inline-block w-16 h-16 md:w-20 md:h-20">
+            <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center text-center gap-6">
+              <div className="relative inline-block mr-5 sm:mr-0 w-16 h-16 md:w-24 md:h-24">
                 <Image
                   fill
                   style={{
-                    color: "transparent",
+                    color: "#ffffff",
+                    // backgroundColor: "#393D4A",
                   }}
-                  src="/logos/3.jpg"
+                  src="/logos/aca.png"
                   //transition-transform absolute inset-0 duration-500 hover:scale-125 hover:-rotate-12
-                  className=" object-cover h-full w-full  rounded-full border border-white/80"
+                  className=" object-contain h-full w-full  rounded-full border border-white/80"
                   alt="profile"
                 />
               </div>
