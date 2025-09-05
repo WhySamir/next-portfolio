@@ -31,18 +31,19 @@ export default function LandingPage() {
     <>
       <section
         id="home"
+        style={{
+          // background:
+          //   "linear-gradient(180deg, #2F3446 40%, #2F344640 54%, #2F3446 59%, #2F3446 100%)",
+          backgroundImage: 'url("/logos/e1.png")',
+          // backgroundSize: "800px 650px",
+          backgroundSize: "850px 640px",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center bottom",
+        }}
         className="relative overflow-hidden h-[100svh] flex flex-col pt-12  items-center md:justify-center justify-center text-white "
       >
         <div className="relative   z-10  text-center md:mt-10 lg:max-w-7xl ">
-          <main className="relative flex flex-col  gap-8 ">
-            <div
-              style={{
-                // background:
-                //   "linear-gradient(180deg, #2F3446 40%, #2F344640 54%, #2F3446 59%, #2F3446 100%)",
-                backgroundImage: 'url("/logos/e1.png")',
-              }}
-              className="absolute z-0 -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px]  rounded-full blur-3xl"
-            />
+          <main className="relative  bg-cover  bg-no-repeat flex flex-col  gap-8 ">
             {/* name and photo */}
             <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center text-center gap-6">
               <div className="relative inline-block mr-5 sm:mr-0 w-16 h-16 md:w-24 md:h-24">
@@ -52,7 +53,7 @@ export default function LandingPage() {
                     color: "#ffffff",
                     // backgroundColor: "#393D4A",
                   }}
-                  src="/logos/ttt.png"
+                  src="/logos/aca.png"
                   //transition-transform absolute inset-0 duration-500 hover:scale-125 hover:-rotate-12
                   className=" object-contain h-full w-full  rounded-full border border-white/10"
                   alt="profile"
