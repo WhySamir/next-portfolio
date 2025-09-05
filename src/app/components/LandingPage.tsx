@@ -52,13 +52,13 @@ export default function LandingPage() {
                     color: "#ffffff",
                     // backgroundColor: "#393D4A",
                   }}
-                  src="/logos/aca.png"
+                  src="/logos/ttt.png"
                   //transition-transform absolute inset-0 duration-500 hover:scale-125 hover:-rotate-12
-                  className=" object-contain h-full w-full  rounded-full border border-white/80"
+                  className=" object-contain h-full w-full  rounded-full border border-white/10"
                   alt="profile"
                 />
               </div>
-              <div className="flex flex-col items-center  sm:items-start justify-center ">
+              <div className="z-20 flex flex-col items-center  sm:items-start justify-center ">
                 <div className="text-gray-50 text-3xl font-bold font-barlow text-left ">
                   <span>Samir Shakya</span>
                 </div>
