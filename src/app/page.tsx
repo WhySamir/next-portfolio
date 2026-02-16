@@ -2,6 +2,7 @@
 import LandingPage from "./components/LandingPage";
 import Projects from "./components/Projects";
 import Skills from "./components/knowledges/Skills";
+import Experience from "./components/Experience";
 
 export default function Home() {
   return (
@@ -12,12 +13,14 @@ export default function Home() {
           <Skills />
         </div>
       </div>
+      <Experience />
       <section
         className="relative z-10 py-16 sm:py-24 w-full text-[#ededed]"
         id="projects"
       >
         <div className="max-w-7xl mx-auto px-5 sm:px-10">
           <Projects />
+          {/* <FallingLight /> */}
         </div>
       </section>
     </>

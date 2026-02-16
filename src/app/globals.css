@@ -18,15 +18,19 @@
     --foreground: #1a1a1a;
   }
 }
+
 .font-avantgarde {
   font-family: var(--font-avantgarde);
 }
+
 .font-gambarino {
   font-family: var(--font-gambarino);
 }
+
 .font-Butcherman {
   font-family: var(--font-Butcherman);
 }
+
 .font-barlow {
   font-family: var(--font-barlow);
 }
@@ -39,10 +43,12 @@ body {
 
 @layer utilities {
   @keyframes gradientShift {
+
     0%,
     100% {
       background-position: 0% 50%;
     }
+
     50% {
       background-position: 100% 50%;
     }
@@ -61,5 +67,99 @@ body {
 @layer base {
   html {
     @apply scroll-smooth;
+  }
+
+  /* Lenis smooth scroll styles */
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  /* GPU acceleration hints for smoother transforms */
+  .will-change-transform {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+}
+
+/* ── Rain effect keyframes ──────────────────────────────────────── */
+@keyframes footer-rain-fall {
+  0% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(800px);
+    opacity: 0;
+  }
+}
+
+@keyframes footer-splash {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1) translateY(-4px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1.5) translateY(-8px);
+    opacity: 0;
+  }
+}
+
+@keyframes footer-mist {
+
+  0%,
+  100% {
+    opacity: 0.03;
+    transform: translateX(0);
+  }
+
+  50% {
+    opacity: 0.08;
+    transform: translateX(20px);
+  }
+}
+
+/* ── Tech card animated border ──────────────────────────────────── */
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes fire-border-spin {
+  to {
+    --border-angle: 360deg;
   }
 }

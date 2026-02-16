@@ -35,8 +35,9 @@ export default function LandingPage() {
           // background:
           //   "linear-gradient(180deg, #2F3446 40%, #2F344640 54%, #2F3446 59%, #2F3446 100%)",
           backgroundImage: 'url("/logos/e1.png")',
+          // backgroundImage: 'url("/logos/e1.png")',
           // backgroundSize: "800px 650px",
-          backgroundSize: "850px 640px",
+          backgroundSize: "clamp(850px, 50vw, 1400px) auto",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center bottom",
         }}
@@ -45,15 +46,16 @@ export default function LandingPage() {
         <div className="relative   z-10  text-center md:mt-10 lg:max-w-7xl ">
           <main className="relative  bg-cover  bg-no-repeat flex flex-col  gap-8 ">
             {/* name and photo */}
-            <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center text-center gap-6">
-              <div className="relative inline-block mr-5 sm:mr-0 w-16 h-16 md:w-24 md:h-24">
+            <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center text-center gap-2 sm:gap-6">
+              <div className="relative inline-block mr-2 sm:mr-0 w-14 h-14 md:w-17 md:h-17">
                 <Image
                   fill
                   style={{
                     color: "#ffffff",
                     // backgroundColor: "#393D4A",
                   }}
-                  src="/logos/aca.png"
+                  // src="/logos/aca.png"
+                  src="/logos/samir.jpg"
                   //transition-transform absolute inset-0 duration-500 hover:scale-125 hover:-rotate-12
                   className=" object-contain h-full w-full  rounded-full border border-white/10"
                   alt="profile"
