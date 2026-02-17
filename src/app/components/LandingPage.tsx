@@ -50,6 +50,7 @@ export default function LandingPage() {
               <div className="relative inline-block mr-2 sm:mr-0 w-14 h-14 md:w-17 md:h-17">
                 <Image
                   fill
+                  priority
                   style={{
                     color: "#ffffff",
                     // backgroundColor: "#393D4A",
