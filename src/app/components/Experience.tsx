@@ -17,7 +17,7 @@ const experiences: ExperienceEntry[] = [
   {
     company: "Inflancer Technology",
     position: "Fullstack Developer Intern",
-    period: "2025 - Present",
+    period: "2025 - 2026",
     description:
       "Development of enterprise-scale applications.",
     achievements: [
